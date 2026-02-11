@@ -1,881 +1,444 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Personal Portfolio Website</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <!-- font awesome -->
+    <title>Front-End Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Clean, modern frontend developer portfolio with smooth animations."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome (local) -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <!-- main css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <!-- default color css  -->
-    <link rel="stylesheet" href="css/skins/color-1.css" disabled>
-    <link rel="stylesheet" href="css/style-switcher.css">
-    <!-- theme colors -->
-    <link rel="stylesheet" class="alternate-style" title="color-1" href="/css/skins/color-1.css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="color-2" href="/css/skins/color-2.css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="color-3" href="/css/skins/color-3.css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="color-4" href="/css/skins/color-4.css">
-    <link rel="stylesheet" class="alternate-style" title="color-5" href="/css/skins/color-5.css" disabled>
-    <!-- fav icon  -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- modern styles -->
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
   </head>
-  <body class="dark">
 
-    <!-- ========== Start pre loader ========== -->
-    <div class="preloader">
-      <div class="box">
-        <div></div>
-        <div></div>
-        <div></div>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span class="brand-text">Tanzeel</span>
+        </a>
+
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="menu-btn-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
       </div>
-    </div>
-    <!-- ========== End pre loader ========== -->
+    </header>
 
-    <!-- start header  -->
-    <div class="header">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="logo">
-            <a href="index.html">g</a>
-          </div>
-          <div class="hamburger-btn outer-shadow hover-in-shadow">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end  -->
+    <main id="main">
+      <!-- HERO -->
+      <section class="section hero" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
 
-    <!-- navigation menu start  -->
-    <nav class="nav-menu">
-      <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
-      <div class="nav-menu-inner">
-        <ul>
-          <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
-          <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
-          <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a></li>
-          <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
-          <!-- <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">Testimonial</a></li> -->
-          <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
-        </ul>
-      </div>
-      <p class="copyright-text">&copy; 2021 This is demo</p>
-
-      <div class="fade-out-effect">
-
-      </div>
-    </nav>
-    <!-- end  -->
-
-    <!-- home section start  -->
-    <section class="home-section section active" id="home">
-      <!-- effect wrap -->
-        <div class="effect-wrap">
-          <div class="effect effect-1">
-
-          </div>
-          <div class="effect effect-2">  <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
-          </div>
-          <div class="effect effect-3">
-          </div>
-          <div class="effect effect-4">
-          </div>
-          <div class="effect effect-5"> 
-            <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
-          </div>
-        </div>
-      <!-- end -->
-      <div class="container">
-        <div class="row full-screen align-items-center">
-          <div class="home-text">
-            <p>Hello, </p>
-            <!-- ========== Start typing animation ========== -->
-            <div id="auto-typing-animation">
-              <p>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-            </div>
-            <!-- ========== End typing animation ========== -->
-            <h1>Web Designer & Developer</h1>
-            <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
-          </div>
-
-          <div class="home-image">
-            <div class="img-box inner-shadow">
-              <img src="./img/profile-pic.png" class="outer-shadow" alt="profile-pic" srcset="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end -->
-
-    <!-- about section  -->
-    <section class="about-section section" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <div class="data-heading">MAIN INFO</div>
-            <h2>About me</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="about-img">
-            <div class="img-box inner-shadow">
-              <img src="./img/profile-pic.png" alt="" class="outer0shadow">
-            </div>
-            <!-- social icons -->
-              <div class="social-links">
-
-                <a href="https://www.facebook.com/EEE-project-solution-lab-107106394047092/" target="_nextTab" class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/channel/UC2TmzHkWeKpEXnYxRAHdjIQ" target="_nextTab" class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i class="fab fa-youtube"></i></a>
-                <a href="#" target="_nextTab" class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i class="fab fa-github"></i></a>
-                <a href="#" target="_nextTab" class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_nextTab" class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_nextTab" class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          <div class="about-info">
-            <p class="about-info-inner">
-              <!-- content will fetch from  "TODO: js/autoTypingAnimation " -->
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">I’m Web Developer</p>
+            <h1 class="hero-title">Front-End Web Developer</h1>
+            <p class="hero-subtitle">
+              I build clean, responsive interfaces with modern HTML, CSS, and JavaScript—focused on
+              performance, usability, and a professional UI.
             </p>
-            <!-- this is a just demo text  -->
 
-            <!-- <span>Hi, this is a demo name</span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eius officia ea ut vonsectetur adipisicing elit. Illo voluptatum iste, tempora rem obcaecati omnis delectus sunt, consequuntur, et ut quasi aperiam assumenda! <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex beatae reprehenderit vero maiores dignissimos error vitae, optio inventore explicabo quia officiis magni delectus? -->
-
-
-            <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow" target="next_page">Download CV</a>
-            <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
-          </div>
-        </div>
-        <!-- about section start -->
-        <div class="row">
-          <div class="about-tabs">
-            <span class="tab-item outer-shadow active" data-target = ".skills">skills</span>
-            <span class="tab-item" data-target = ".experience">experience</span>
-            <span class="tab-item" data-target = ".education">education</span>
-          </div>
-        </div>
-        <!-- end -->
-        <!-- skill section start  -->
-        <div class="row">
-          <div class="skills tab-content active">
-            <!-- skill item -->
-            <div class="row">
-
-              <!-- ========== Start skills ========== -->
-              <div class="skill-item">
-                <p>HTML</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(50% - 14px)">
-                    <span>50%</span>
-                  </div>
-                </div>
-              </div>
-
-              
-              <div class="skill-item">
-                <p>JavaScript</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(60% - 14px);">
-                    <span>60%</span>
-                  </div>
-                </div>
-              </div>
-              
-              
-              <div class="skill-item">
-                <p>PHP</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(70% - 14px);">
-                    <span>70%</span>
-                  </div>
-                </div>
-              </div>
-              
-              
-              <div class="skill-item">
-                <p>Bootstrap</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(80% - 14px);">
-                    <span>80%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <p>Angular</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(90% - 14px);">
-                    <span>90%</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <p>JQuery</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(95% - 14px);">
-                    <span>95%</span>
-                  </div>
-                </div>
-              </div>
-              <!-- ========== End skills ========== -->              
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#about">More About Me</a>
+              <a class="btn btn-ghost" href="#contact">Hire Me</a>
+              <a class="btn btn-outline" href="webfonts/TanzeelUlHudaResume.pdf" download>Download CV</a>
             </div>
-            <!-- end -->
           </div>
-        </div>
-        <!-- end  -->
 
-        <!-- experience  -->
-        <div class="row">
-          <div class="experience tab-content">
-            <div class="row">
-              <div class="timeline">
-                <div class="row">
-                  <!-- time line items  -->
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-briefcase icon"></i>
-                      <span>Aug, 2021</span>
-                      <h3>Web Designer</h3>
-                      <h4>Web Developer</h4>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nostrum quibusdam. Dolor aut tempora eligendi.</p>
-                    </div>
-                  </div>
-                  <!-- end  -->
-                  <!-- time line items  -->
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-briefcase icon"></i>
-                      <span>Aug, 2021</span>
-                      <h3>Web Designer</h3>
-                      <h4>Web Developer</h4>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nostrum quibusdam. Dolor aut tempora eligendi.</p>
-                    </div>
-                  </div>
-                  
-                  <!-- end  -->
-                  <!-- time line items  -->
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-briefcase icon"></i>
-                      <span>Aug, 2021</span>
-                      <h3>Web Designer</h3>
-                      <h4>Web Developer</h4>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nostrum quibusdam. Dolor aut tempora eligendi.</p>
-                    </div>
-                  </div>
-                  
-                  <!-- end  -->
-                </div>
-              </div>
+          <div class="hero-media" data-reveal>
+            <div class="profile-frame">
+              <img src="img/img2.png" alt="Profile photo" class="profile-img" />
             </div>
           </div>
         </div>
-        <!--experience end -->
+      </section>
 
-        <!-- education start -->
-        <div class="row">
-          <div class="education tab-content">
-            <div class="row">
-              <div class="timeline">
-                <div class="row">
-                  <!-- time line items  -->
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-graduation-cap icon"></i>
-                      <span>2012 - 2020</span>
-                      <h3>Web Designer</h3>
-  
-                      <p>demo education Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus repellendus aut?</p>
-                    </div>
-                  </div>
-                  
-                  <!-- end  -->
-                  <!-- time line items  -->
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-graduation-cap icon"></i>
-                      <span>2012 - 2020</span>
-                      <h3>graduate</h3>
-  
-                      <p>demo education Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus repellendus aut?</p>
-                    </div>
-                  </div>
-                  
-                  <!-- end  -->
-                  <!-- time line items  -->
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-graduation-cap icon"></i>
-                      <span>2012 - 2020</span>
-                      <h3>graduate</h3>
-  
-                      <p>demo education Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus repellendus aut?</p>
-                    </div>
-                  </div>
-                  
-                  <!-- end  -->
-                </div>
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="kicker">Main Info</p>
+            <h2>About</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="card" data-reveal>
+              <h3 class="card-title">What I do</h3>
+              <p class="muted">
+                I focus on building job-ready front-end projects: responsive layouts, accessible
+                components, clean UI, and smooth interactions. I like structured CSS, reusable UI
+                patterns, and shipping fast, maintainable code.
+              </p>
+
+              <div class="about-actions">
+                <a class="btn btn-outline" href="./webfonts/TanzeelUlHudaResume.pdf" download>Download CV</a>
+                <a class="btn btn-primary" href="#contact">Hire Me</a>
+              </div>
+            </div>
+
+            <div class="card" data-reveal>
+              <h3 class="card-title">Social</h3>
+              <p class="muted">Connect with me here.</p>
+
+              <div class="social-row">
+                <a
+                  class="social-link"
+                  href="https://github.com/qadritanzeel1"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/in/tanu-qadri"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/tanzeel_ul_huda_qadri/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                  <span>Instagram</span>
+                </a>
+              </div>
+
+              <p class="note">
+              <!-- pdate these links in <span class="mono">index.html</span> to your real
+                profiles.  Tip: u -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="kicker">Toolkit</p>
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skills-grid" data-reveal>
+            <div class="skill">
+              <div class="skill-top">
+                <span>HTML5</span>
+                <span class="skill-icon"><i class="fab fa-html5" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>CSS3</span>
+                <span class="skill-icon"><i class="fab fa-css3-alt" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>JavaScript</span>
+                <span class="skill-icon"><i class="fab fa-js" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>React</span>
+                <span class="skill-icon"><i class="fab fa-react" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>ES6+</span>
+                <span class="skill-icon"><i class="fab fa-js" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Git</span>
+                <span class="skill-icon"><i class="fab fa-git-alt" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>GitHub</span>
+                <span class="skill-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>GitLab</span>
+                <span class="skill-icon"><i class="fab fa-gitlab" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Postman</span>
+                <span class="skill-icon"><i class="fas fa-paper-plane" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Tailwind CSS</span>
+                <span class="skill-icon"><i class="fas fa-wind" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Material UI</span>
+                <span class="skill-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>NPM</span>
+                <span class="skill-icon"><i class="fab fa-npm" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Yarn</span>
+                <span class="skill-icon"><i class="fab fa-yarn" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Netlify</span>
+                <span class="skill-icon"><i class="fas fa-cloud-upload-alt" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Vercel</span>
+                <span class="skill-icon"><i class="fas fa-code-branch" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top">
+                <span>Dataflow</span>
+                <span class="skill-icon"><i class="fas fa-project-diagram" aria-hidden="true"></i></span>
               </div>
             </div>
           </div>
         </div>
-        <!-- education end -->
+      </section>
 
+      <!-- EDUCATION -->
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="kicker">Background</p>
+            <h2>Education</h2>
+          </div>
+
+          <div class="timeline" data-reveal>
+            <article class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <p class="timeline-date">03/2024 – Present</p>
+                <h3>BCA (Bachelor of Computer Application)</h3>
+                <p class="muted">Indira Gandhi National Open University</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <p class="timeline-date">08/2025 – Present</p>
+                <h3>Software Development</h3>
+                <p class="muted">Sheryians Coding School</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="kicker">Selected Work</p>
+            <h2>Projects</h2>
+          </div>
+
+          <div class="projects-grid" data-reveal>
+            <article class="project-card">
+              <div class="project-media">
+                <img src="img/portfolio/large/project-1/1.png" alt="Habit Builder project preview" loading="lazy" />
+              </div>
+              <div class="project-top">
+                <h3>Habit Builder</h3>
+                <p class="muted">
+                  A modern habit-tracking web app that helps users build consistency through streak tracking, weekly goals, and visual progress indicators. Features include custom habit frequencies, editable habits, completion history, real-time stats, dark/light mode, smooth animations, and persistent storage using localStorage.
+                </p>
+              </div>
+              <div class="project-meta">
+                <p class="meta-label">Tech stack</p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span
+                  ><span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://habit-builder-app.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/qadritanzeel1/Habit-Builder-App.git" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img src="img/portfolio/large/project-2/learning1.png" alt="Learning Platform project preview" loading="lazy" />
+              </div>
+              <div class="project-top">
+                <h3>Learning Platform</h3>
+                <p class="muted">
+                  Built a multi-page learning platform front-end featuring login validation, animated UI states, domain-wise course rendering, and persistent enrollment tracking using localStorage. Implemented smooth navigation, mobile-friendly menus, and interactive animations to simulate a real-world learning experience.
+                </p>
+              </div>
+              <div class="project-meta">
+                <p class="meta-label">Tech stack</p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://learning-platform-36jh462ts-tanzeel-ul-hudas-projects.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/qadritanzeel1/Learning-Platform.git" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img src="img/portfolio/large/project-3/R2.png" alt="Restaurant App project preview" loading="lazy" />
+              </div>
+              <div class="project-top">
+                <h3>Restaurant App</h3>
+                <p class="muted">
+                  A fully responsive restaurant web application featuring dynamic menu rendering, cart & wishlist functionality, product detail modals, multi-step checkout, order history, table reservations, and dark mode — all powered by vanilla JavaScript and localStorage.
+                </p>
+              </div>
+              <div class="project-meta">
+                <p class="meta-label">Tech stack</p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://responsive-restaurant-ui.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/qadritanzeel1/responsive-restaurant-website.git" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+         
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="kicker">Contact</p>
+            <h2>Let’s talk</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card" data-reveal>
+              <h3 class="card-title">Contact details</h3>
+              <ul class="contact-list">
+                <li>
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <span class="muted">Email:</span>
+                  <span class="mono">tanzeelqadri042@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                  <span class="muted">Phone:</span>
+                  <span class="mono">+91 7006 574 928</span>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  <span class="muted">Location:</span>
+                  <span class="mono">Ahmad Nagar, Srinagar, 190020</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card" data-reveal>
+              <h3 class="card-title">Send a message</h3>
+              <form class="contact-form" id="contact-form">
+                <div class="form-row">
+                  <label>
+                    <span>Name</span>
+                    <input type="text" name="name" autocomplete="name" required />
+                  </label>
+                  <label>
+                    <span>Email</span>
+                    <input type="email" name="email" autocomplete="email" required />
+                  </label>
+                </div>
+                <label>
+                  <span>Subject</span>
+                  <input type="text" name="subject" required />
+                </label>
+                <label>
+                  <span>Message</span>
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+                <p class="form-note muted">This opens your default email app (no external services).</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Tanzeel. Built with HTML, CSS & JavaScript.
+</p>
+        <a class="to-top" href="#top">Back to top</a>
       </div>
-    </section>
-    <!-- end  -->
+    </footer>
 
-    <!-- ========== Start service section ========== -->
+    <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
 
-    <div class="service-section section" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <div class="data-heading">Services</div>
-            <h2>What i do</h2>
-          </div>
-        </div>
-        <div class="row">
-          <!-- ========== Start service item ========== -->
-              <div class="service-item card" data-tilt data-tilt-scale="1.1">
-                <div class="service-item-inner outer-shadow">
-                  <div class="icon inner-shadow">
-                    <i class="fas fa-mobile-alt"></i>
-                  </div>
-                  <h3>Responsive design</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo cum eos facere.</p>
-                </div>
-              </div>
-
-              
-              <div class="service-item card" data-tilt data-tilt-scale="1.1"> 
-                <div class="service-item-inner outer-shadow">
-                  <div class="icon inner-shadow">
-                    <i class="fas fa-laptop-code"></i>
-                  </div>
-                  <h3>Web design</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui libero voluptates eligendi?.</p>
-                </div>
-              </div>
-
-              
-              <div class="service-item card" data-tilt data-tilt-scale="1.1">
-                <div class="service-item-inner outer-shadow">
-                  <div class="icon inner-shadow">
-                    <i class="fas fa-palette"></i>
-                  </div>
-                  <h3>Graphic design</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo cum eos facere.</p>
-                </div>
-              </div>
-
-              <div class="service-item card" data-tilt data-tilt-scale="1.1">
-                <div class="service-item-inner outer-shadow">
-                  <div class="icon inner-shadow">
-                    <i class="fas fa-code"></i>
-                  </div>
-                  <h3>Clean code</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo cum eos facere.</p>
-                </div>
-              </div>
-
-              <div class="service-item card" data-tilt data-tilt-scale="1.1">
-                <div class="service-item-inner outer-shadow">
-                  <div class="icon inner-shadow">
-                    <i class="fas fa-search"></i>
-                  </div>
-                  <h3>SEO Marketing</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo cum eos facere.</p>
-                </div>
-              </div>
-
-              <div class="service-item card" data-tilt data-tilt-scale="1.1">
-                <div class="service-item-inner outer-shadow">
-                  <div class="icon inner-shadow">
-                    <i class="fas fa-bullhorn"></i>
-                  </div>
-                  <h3>Great Support</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo cum eos facere.</p>
-                </div>
-              </div>
-
-          <!-- ========== End service item ========== -->
-        </div>
-      </div>
-    </div>    
-    <!-- ========== End service section ========== -->
-
-
-    <!-- ========== Start portfolio section ========== -->
-        <section class="portfolio-section section" id="portfolio">
-          <div class="container">
-            <div class="row">
-              <div class="section-title">
-                <div class="data-heading">portfolio</div>
-                <h2>Latest Works</h2>
-              </div>
-            </div>
-            <!-- ========== Start portfolio filter========== -->
-                <div class="row">
-                  <div class="portfolio-filter">
-                    <span class="filter-item outer-shadow active" data-target="all">All</span>
-                    <span class="filter-item" data-target="web-application">Web application</span>
-                    <span class="filter-item" data-target="photoshop">photoshop</span>
-                    <span class="filter-item" data-target="mobile-app">mobile app</span>
-                    <span class="filter-item" data-target="e-commerce">e commerce</span>
-                  </div>
-                </div>
-            <!-- ========== End portfolio filter========== -->
-
-            <!-- ========== Start portfolio items ========== -->
-                <div class="row portfolio-items">
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-1.png" alt="portfolio" data-screenshots="img/portfolio/large/project-1/1.png, 
-                        img/portfolio/large/project-1/2.png,
-                        img/portfolio/large/project-1/3.png,
-                        img/portfolio/large/project-1/4.png,
-                        img/portfolio/large/project-1/5.png,
-                        img/portfolio/large/project-1/6.png",
-                        >
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">personal portfolio</p>
-                      <!-- ========== Start portfolio item details ========== -->
-                          <div class="portfolio-item-details">
-                            <div class="row">
-                              <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
-                              </div>
-                              <div class="info">
-                                <h3>Project info</h3>
-                                <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, js</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- ========== End portfolio item details ========== -->
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-2.png" alt="portfolio" data-screenshots="img/portfolio/large/project-2/1.png, 
-                        img/portfolio/large/project-2/2.png"
-                        >
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">wedding couple</p>
-                      <!-- ========== Start portfolio item details ========== -->
-                          <div class="portfolio-item-details">
-                            <div class="row">
-                              <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
-                              </div>
-                              <div class="info">
-                                <h3>Project info</h3>
-                                <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- ========== End portfolio item details ========== -->
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="e-commerce">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-3.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-3/1.png, 
-                        img/portfolio/large/project-3/2.png,
-                        img/portfolio/large/project-3/3.png,
-                        img/portfolio/large/project-3/4.png,
-                        img/portfolio/large/project-3/5.png
-                        ">
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">wedding couple</p>
-                      <!-- ========== Start portfolio item details ========== -->
-                          <div class="portfolio-item-details">
-                            <div class="row">
-                              <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla illo atque accusantium debitis non necessitatibus laboriosam architecto quas voluptatem? Autem hic in molestias rerum laborum ex ratione voluptatibus impedit aliquam! ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
-                              </div>
-                              <div class="info">
-                                <h3>product loading page</h3>
-                                <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery, PHP, Ajax</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- ========== End portfolio item details ========== -->
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-4.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-4/1.png">
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">personal portfolio</p>
-                      <!-- ========== Start portfolio item details ========== -->
-                          <div class="portfolio-item-details">
-                            <div class="row">
-                              <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
-                              </div>
-                              <div class="info">
-                                <h3>product loading page</h3>
-                                <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery, PHP, Ajax</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- ========== End portfolio item details ========== -->
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-5.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-5/1.png">
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">fetness & gym</p>
-                      <!-- ========== Start portfolio item details ========== -->
-                          <div class="portfolio-item-details">
-                            <div class="row">
-                              <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
-                              </div>
-                              <div class="info">
-                                <h3>product loading page</h3>
-                                <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery, PHP, Ajax</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- ========== End portfolio item details ========== -->
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-                  
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="web-application">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-6.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-6/1.png,
-                        img/portfolio/large/project-6/2.png,
-                        img/portfolio/large/project-6/3.png,
-                        ">
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">quiz applicatioon</p>
-                      <!-- ========== Start portfolio item details ========== -->
-                          <div class="portfolio-item-details">
-                            <div class="row">
-                              <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
-                              </div>
-                              <div class="info">
-                                <h3>product loading page</h3>
-                                <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery, PHP, Ajax</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- ========== End portfolio item details ========== -->
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="mobile-app">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-7.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-7/1.png,
-                        img/portfolio/large/project-7/2.png,
-                        ">
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">quiz applicatioon</p>
-                      <!-- ========== Start portfolio item details ========== -->
-                          <div class="portfolio-item-details">
-                            <div class="row">
-                              <div class="description">
-                                <h3>Project brief: </h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia.</p>
-                              </div>
-                              <div class="info">
-                                <h3>product loading page</h3>
-                                <ul>
-                                  <li>Date - <span>2021</span></li>
-                                  <li>Client - <span>xyz</span></li>
-                                  <li>Tools - <span>html, css, Jquery, PHP, Ajax</span></li>
-                                  <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                                  <li>Web - <span><a href="#" id=link" target="_next">www.morsed.com/project_name</a></span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- ========== End portfolio item details ========== -->
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-                  <!-- ========== Start portfolio item ========== -->
-                  <div class="portfolio-item" data-category="photoshop">
-                    <div class="portfolio-item-inner outer-shadow">
-                      <div class="portfolio-item-image">
-                        <img src="img/portfolio/thumb/project-8.png" alt="portfolio" data-screenshots="
-                        img/portfolio/large/project-8/1.png,
-                        img/portfolio/large/project-8/2.png,
-                        ">
-
-                        <!-- view project button  -->
-                        <span class="view-project">view project</span>
-                      </div>
-                      <p class="portfolio-item-title">personal portfolio</p>
-                      
-                    </div>
-                  </div>
-                  <!-- ========== End portfolio item ========== -->
-                  
-                </div>
-            <!-- ========== End portfolio items ========== -->
-            
-          </div>
-        </section>
-    <!-- ========== End portfolio section ========== -->
-
-    <!-- ========== Start contact section ========== -->
-    <section class="contact-section section" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <div class="data-heading">contact</div>
-            <h2>Get In Touch</h2>
-          </div>
-        </div>
-        <div class="row">
-          <!-- ========== Start contact item ========== -->
-          <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
-            <div class="contact-item-inner outer-shadow">
-              <i class="fas fa-phone">
-                <span class="contact-span">Phone</span>
-                <p class="contact-p">+880 152 147 5412</p>
-              </i>
-            </div>
-          </div>
-          <!-- ========== End contact item ========== -->
-          <!-- ========== Start contact item ========== -->
-          <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
-            <div class="contact-item-inner outer-shadow">
-              <i class="fas fa-envelope">
-                <span class="contact-span">Email Address</span>
-                <p class="contact-p">golammorsed6@gmail.com</p>
-              </i>
-            </div>
-          </div>
-          <!-- ========== End contact item ========== -->
-          <!-- ========== Start contact item ========== -->
-          <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
-            <div class="contact-item-inner outer-shadow">
-              <i class="fas fa-map-marker-alt">
-                <span class="contact-span">Address</span>
-                <p class="contact-p">Dhaka, Bangladesh</p>
-              </i>
-            </div>
-          </div>
-          <!-- ========== End contact item ========== -->
-        </div>
-        <!-- ========== Start contact from ========== -->
-        <div class="row">
-          <div class="contact-form">
-            <form action="" method="">
-              <div class="row">
-                <div class="w-50">
-                  <div class="input-group outer-shadow hover-in-shadow">
-                    <input class="input-control" type="text" name="name" id="name" placeholder="Name" required>
-                  </div>
-                  <div class="input-group outer-shadow hover-in-shadow">
-                    <input class="input-control" type="email" name="email" id="sender" placeholder="email" required>
-                  </div>
-                  <div class="input-group outer-shadow hover-in-shadow">
-                    <input class="input-control" type="tel" name="subject" id="subject" placeholder="Subject" required>
-                  </div>
-                </div>
-                <div class="w-50">
-                  <div class="input-group outer-shadow hover-in-shadow">
-                    <textarea class="input-control" name="user_dtls" id="user_dtls" required placeholder="Type here..."></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="submit-btn">
-                  <button class="btn-1 outer-shadow outer-shadw hover-in-shadow submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- ========== End contact from ========== -->
-      </div>
-    </section>
-    <!-- ========== End contact section ========== -->
-
-    <!-- ========== Start portfolio popup ========== -->
-        <div class="pp portfolio-popup">
-          <div class="pp-details">
-            <div class="pp-details-inner">
-              <div class="pp-title">
-                <h2>personal portfolio</h2>
-                <p>Category - <span class="pp-project-category">Web Application</span></p>
-              </div>
-              <div class="pp-project-details">
-                <div class="row">
-                  <div class="description">
-                    <h3>Project brief: </h3>
-                    <p>Lorem ipsum dolor, sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis corporis culpa! amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi. Officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</p>
-                  </div>
-                  <div class="info">
-                    <h3>Project info</h3>
-                    <ul>
-                      <li>Date - <span>2021</span></li>
-                      <li>Client - <span>xyz</span></li>
-                      <li>Tools - <span>html, css, js</span></li>
-                      <li>Web - <span><a href="#" id="link" id="link" target="_next">www.morsed.com/project_name</a></span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="separator"></div>
-
-          <div class="pp-main">
-            <div class="pp-main-inner">
-              <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details<i class="fas fa-plus"></i></div>
-              <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
-              <img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow">
-              <div class="pp-counter">1 of 6</div>
-            </div>
-            <div class="pp-loader">
-              <div class="loader"></div>
-            </div>
-            <!-- ========== Start pp navigation ========== -->
-            <div class="pp-pre"><i class="fas fa-play"></i></div>
-            <div class="pp-next"><i class="fas fa-play"></i></div>
-            <!-- ========== End pp navigation ========== -->
-          </div>
-        </div>
-    <!-- ========== End portfolio popup ========== -->
-
-    <!-- ========== Start style switciher start - for demo pirposs only ========== -->
-    <div class="style-switcher outer-shadow">
-      <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
-        <i class="fas fa-cog fa-spin"></i>
-      </div>
-      <div class="day-night s-icon outer-shadow hover-in-shadow">
-        <i class="fas fa-moon"></i>
-      </div>
-
-      <h4>Theme Color</h4>
-      <div class="colors"> 
-        <span class="color-1" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-1')"></span>
-        <span class="color-2" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-2')"></span>
-        <span class="color-3" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-3')"></span>
-        <span class="color-4" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-4')"></span>
-        <span class="color-5" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-5')"></span>
-      </div>
-    </div>
-    <!-- ========== End style switciher start - for demo pirposs only ========== -->
-    <!-- main js -->
-    <script src="js/main.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js'></script>
-    <!-- style switcher js -->
-    <script src="js/style-switcher.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="js/glassmorphism-animation.js"></script>
-    <script src="js/autoTypingAnimation.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".contact-card"), {
-        max: 25,
-        speed: 400
-      });
-
-      VanillaTilt.init(document.querySelectorAll(".link-card"), {
-        max: 25,
-        speed: 400
-      });
-
-      VanillaTilt.init(document.querySelectorAll(".card")),{
-        max: 25,
-        speed: 300
-      };
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
